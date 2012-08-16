@@ -3,4 +3,5 @@
     <string name="app_name">CustomSeekBar</string>
     <string name="title_activity_main">MainActivity</string>
 	<string name="no_progress">0%</string>
+	<string name="setting_title">Set value</string>
 </resources>

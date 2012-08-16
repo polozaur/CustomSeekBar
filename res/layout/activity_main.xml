@@ -15,6 +15,40 @@
         android:secondaryProgress="0"
         android:thumb="@drawable/marker" />
 
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mainSeekBar"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+        <View
+            android:id="@+id/dotView"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_title"
+            android:textColor="#AAAAAA"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/upMarginView"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_above="@+id/titleLayout"
+        android:background="@drawable/line" />
+
     <TextView
         android:id="@+id/progressTextView"
         android:layout_width="wrap_content"
@@ -25,5 +59,12 @@
         android:textColor="#AAAAAA"
         android:textSize="16dp"
         android:textStyle="bold" />
+
+    <View
+        android:id="@+id/downMarginView"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/progressTextView"
+        android:background="@drawable/line" />
 
 </RelativeLayout>
