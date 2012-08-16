@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <nine-patch
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:dither="true"
+            android:src="@drawable/back_seekbar" />
+    </item>
+    <item android:id="@android:id/progress">
+        <bitmap
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:antialias="true"
+            android:filter="false"
+            android:dither="false"
+            android:gravity="left"
+            android:src="@drawable/back_progress"
+            android:tileMode="repeat" />
+    </item>
+
+</layer-list>
